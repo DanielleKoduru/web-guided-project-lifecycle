@@ -26,7 +26,7 @@ class App extends React.Component {
         doggos: res.data.message
       });
     })
-    .catch(res => console.log(res));
+    .catch(err => console.log(err));
   }
 
   componentDidMount() {
