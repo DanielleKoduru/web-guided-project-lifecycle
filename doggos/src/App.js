@@ -14,7 +14,12 @@ class App extends React.Component {
   componentDidMount() {
     axios.get('https://dog.ceo/api/breed/hound/images')
     .then(res => {
-      console.log(res)
+      console.log(res);
+      this.setState({
+        ...this.state,
+        doggos: res.data.message
+      });
+
     }) // happy path
     .catch(err => console.log(err)); // sad path :(
   }
