@@ -7,6 +7,7 @@ import Pokemon from './components/Pokemon';
 
 class App extends React.Component {
   constructor() {
+    console.log("App component constructor");
     super();
     this.state = {
       pokemon: data
@@ -20,7 +21,7 @@ class App extends React.Component {
 
 
   render() {
-    console.log("App component rendering")
+    console.log("App component rendering");
     return (
       <div className="App">
         <Pokemon pokemon={this.state.pokemon} />
