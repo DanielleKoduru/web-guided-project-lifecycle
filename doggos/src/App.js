@@ -9,4 +9,10 @@ class App extends React.Component {
       dogBreed: ""
     }
   }
+
+  render() {
+    return (
+      <div>Hello Doggos</div>
+    )
+  }
 }
