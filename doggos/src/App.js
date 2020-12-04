@@ -42,6 +42,7 @@ class App extends React.Component {
           type="text"
           onChange={this.handleChanges} // write to component state
         />
+        <button onClick={this.fetchDoggos} >Fetch Doggos</button>
         <div>
           {this.state.doggos.map((doggo) => {
             return <img width="200" className="doggo" src={doggo} key={doggo} />;
