@@ -19,7 +19,10 @@ class App extends React.Component {
   }
 
   fetchDoggos = () => {
-    alert(`fetching ${this.state.dogBreed} dogs`)
+    alert(`fetching ${this.state.dogBreed} dogs`);
+    axios.get(`https://dog.ceo/api/breed/${this.state.dogBreed}/images`)
+    .then(res => console.log(res))
+    .catch(res => console.log(res));
   }
 
   componentDidMount() {
