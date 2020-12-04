@@ -16,6 +16,7 @@ class App extends React.Component {
 
   componentDidMount() {
     console.log("componentDidMount running");
+    this.setState({pokemon: data});
   }
 
 
