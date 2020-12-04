@@ -18,6 +18,10 @@ class App extends React.Component {
     })
   }
 
+  fetchDoggos {
+    
+  }
+
   componentDidMount() {
     axios.get('https://dog.ceo/api/breed/hound/images')
     .then(res => {
