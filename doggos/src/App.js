@@ -18,8 +18,8 @@ class App extends React.Component {
     })
   }
 
-  fetchDoggos {
-    
+  fetchDoggos = () => {
+    alert(`fetching ${this.state.dogBreed} dogs`)
   }
 
   componentDidMount() {
