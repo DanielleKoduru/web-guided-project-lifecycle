@@ -30,7 +30,7 @@ class App extends React.Component {
         <h1>Hello webpt22!</h1>
         <div>
           {this.state.doggos.map((doggo) => {
-            return <img width="200" src={doggo} key={doggo} />;
+            return <img width="200" className="doggo" src={doggo} key={doggo} />;
           })}
         </div>
 
