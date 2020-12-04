@@ -52,7 +52,8 @@ class App extends React.Component {
       console.log("doggos have changed!");
     }
 
-    // Just for fun, but showing that we can add specific logic in CDU based on state and prop changes
+    // Just for fun, but showing that we can add specific logic in CDU
+    // and trigger additional API requests based on state and prop changes
     if (this.state.dogBreed === "chihuahua") {
       axios.get(`https://dog.ceo/api/breed/mastiff/images`)
       .then(res => {
