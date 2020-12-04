@@ -60,8 +60,6 @@ class App extends React.Component {
       })
       .catch(res => console.log(res));
     }
-
-
   }
 
   render() {
