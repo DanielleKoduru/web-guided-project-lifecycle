@@ -43,7 +43,7 @@ class App extends React.Component {
     .catch(err => console.log(err)); // sad path :(
   }
 
-  componentDidUpdate(prevState, prevProps) {
+  componentDidUpdate(prevProps, prevState) {
     // runs when state or props have been updated
     // always use an if statement to prevent infinite loops
     if (prevState.doggos !== this.state.doggos) {
