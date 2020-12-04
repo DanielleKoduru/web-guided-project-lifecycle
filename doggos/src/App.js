@@ -11,6 +11,10 @@ class App extends React.Component {
     }
   }
 
+  handleChanges = e => {
+    console.log(e);
+  }
+
   componentDidMount() {
     axios.get('https://dog.ceo/api/breed/hound/images')
     .then(res => {
