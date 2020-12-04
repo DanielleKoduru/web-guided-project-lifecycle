@@ -12,7 +12,10 @@ class App extends React.Component {
   }
 
   handleChanges = e => {
-    console.log(e);
+    this.setState({
+      ...this.state,
+      dogBreed: e.target.value
+    })
   }
 
   componentDidMount() {
