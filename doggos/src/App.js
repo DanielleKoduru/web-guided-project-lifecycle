@@ -29,6 +29,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Hello webpt22!</h1>
+        <input 
+          placeholder="dog breed"
+          value={this.state.dogBreed} // read value from compoennt state
+          type="text"
+          onChange={this.handleChanges} // write to component state
+        />
         <div>
           {this.state.doggos.map((doggo) => {
             return <img width="200" className="doggo" src={doggo} key={doggo} />;
