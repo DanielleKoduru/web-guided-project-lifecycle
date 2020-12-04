@@ -45,7 +45,19 @@ class App extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     // runs when state or props have been updated
-    // always use an if statement to prevent infinite loops
+    // always put logic within if statements to prevent infinite loops!
+
+    // if statements here equivalent to useEffect dependency array
+    if (prevState.doggos !== this.state.doggos) {
+      console.log("doggos have changed!");
+    }
+
+    // Just for fun, but showing that we can add proper logic in CDU
+    if (this.state.dogBreed === "chihuahua") {
+      this.setState({ ...this.state, dogBreed: "pug" });
+      this.fetchDoggos();
+    }
+    
     if (prevState.doggos !== this.state.doggos) {
       console.log("doggos have changed!");
     }
