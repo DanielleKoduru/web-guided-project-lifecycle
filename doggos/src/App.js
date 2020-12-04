@@ -46,6 +46,9 @@ class App extends React.Component {
   componentDidUpdate(prevState, prevProps) {
     // runs when state or props have been updated
     // always use an if statement to prevent infinite loops
+    if (prevState.doggos !== this.state.doggos) {
+      console.log("doggos have changed!");
+    }
   }
 
   render() {
