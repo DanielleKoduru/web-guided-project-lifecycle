@@ -20,7 +20,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevState, prevProps) {
-    
+    console.log("componentDidUpdate running");
   }
 
   render() {
