@@ -21,10 +21,10 @@ class App extends React.Component {
   fetchDoggos = () => {
     axios.get(`https://dog.ceo/api/breed/${this.state.dogBreed}/images`)
     .then(res => {
-            this.setState({
-              ...this.state,
-              doggos: res.data.message
-            });
+      this.setState({
+        ...this.state,
+        doggos: res.data.message
+      });
     })
     .catch(res => console.log(res));
   }
