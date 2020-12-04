@@ -46,8 +46,19 @@ class App extends React.Component {
   componentDidUpdate(prevState, prevProps) {
     // runs when state or props have been updated
     // always use an if statement to prevent infinite loops
-    if (prevState.doggos !=== this.state.doggos) {
+    if (prevState.doggos !== this.state.doggos) {
       console.log("doggos have changed!");
+    }
+
+    if (this.state.dogBreed === "chihuahua") {
+      axios.get(`https://dog.ceo/api/breed/mastiff/images`)
+      .then(res => {
+        this.setState({
+          ...this.state,
+          doggos: res.data.message
+        });
+      })
+      .catch(res => console.log(res));
     }
 
 
