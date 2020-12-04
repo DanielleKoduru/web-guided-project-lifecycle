@@ -33,7 +33,6 @@ class App extends React.Component {
             return <img width="200" className="doggo" src={doggo} key={doggo} />;
           })}
         </div>
-
       </div>
 
     )
