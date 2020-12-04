@@ -10,7 +10,7 @@ class App extends React.Component {
     console.log("App component constructor");
     super();
     this.state = {
-      pokemon: data
+      pokemon: []
     };
   }
 
