@@ -19,7 +19,9 @@ class App extends React.Component {
     this.setState({pokemon: data});
   }
 
-
+  componentDidUpdate(prevState, prevProps) {
+    
+  }
 
   render() {
     console.log("App component rendering");
